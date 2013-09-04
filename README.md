@@ -4,6 +4,11 @@
 
 The `ckeditor_rails` gem integrates the `CKEditor` with the Rails asset pipeline.
 
+This is a forked repository from https://github.com/tsechingho/ckeditor-rails.
+This gem removes all languages except English, and removes the following plugins:
+WebSpellChecker, smiley, scayt, preview, pasteFromWord, link, iframe, forms, flash, div, about, a11yhelp.
+Stylesheets and images related to the above list of plugins are also removed.
+
 And it would work with following environments:
 
 * ruby 1.9.3+
@@ -15,7 +20,7 @@ And it would work with following environments:
 
 Include `ckeditor_rails` in Gemefile
 
-    gem 'ckeditor_rails'
+    gem 'ckeditor_rails', github: 'debalina1989/ckeditor-rails'
 
 Then run `bundle install`
 
